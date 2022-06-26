@@ -13,7 +13,7 @@ function App() {
   useEffect(() => {
     const fetchQuote = async () => {
       try {
-        const response = await axios("/api/random");
+        const response = await axios("https://zenquotes.io/api/random");
         setQuote(response.data[0]);
       } catch (err) {
         console.log(err.message);

@@ -3,7 +3,6 @@
   "version": "0.1.0",
   "homepage": "https://solvman.github.io/free-code-camp-quote-machine",
   "private": true,
-  "proxy": "https://zenquotes.io",
   "dependencies": {
     "axios": "^0.27.2",
     "react": "^18.2.0",
