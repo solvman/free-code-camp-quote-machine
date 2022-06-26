@@ -1,24 +1,39 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState, useEffect } from "react";
+import Buttons from "./Buttons";
+import Quote from "./Quote";
+import axios from "axios";
 
 function App() {
+  const [quote, setQuote] = useState({});
+  const [requestQuote, setRequestQuote] = useState(false);
+
+  const quoteText = quote.q;
+  const quoteAuthor = quote.a;
+
+  useEffect(() => {
+    const fetchQuote = async () => {
+      try {
+        const response = await axios("/api/random");
+        setQuote(response.data[0]);
+      } catch (err) {
+        console.log(err.message);
+      }
+    };
+
+    fetchQuote();
+    console.log("useEffect fired");
+  }, [requestQuote]);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <main id="quote-box" className="App">
+      <Quote quoteText={quoteText} quoteAuthor={quoteAuthor} />
+      <Buttons
+        quoteText={quoteText}
+        quoteAuthor={quoteAuthor}
+        requestQuote={requestQuote}
+        setRequestQuote={setRequestQuote}
+      />
+    </main>
   );
 }
 
