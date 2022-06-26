@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/free-code-camp-quote-machine/static/css/main.1c5f3e49.css",
+    "main.js": "/free-code-camp-quote-machine/static/js/main.2763ce7b.js",
+    "index.html": "/free-code-camp-quote-machine/index.html",
+    "main.1c5f3e49.css.map": "/free-code-camp-quote-machine/static/css/main.1c5f3e49.css.map",
+    "main.2763ce7b.js.map": "/free-code-camp-quote-machine/static/js/main.2763ce7b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1c5f3e49.css",
+    "static/js/main.2763ce7b.js"
+  ]
+}
