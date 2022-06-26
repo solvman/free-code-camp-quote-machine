@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/free-code-camp-quote-machine/static/css/main.1c5f3e49.css",
-    "main.js": "/free-code-camp-quote-machine/static/js/main.38ac2c40.js",
+    "main.css": "/free-code-camp-quote-machine/static/css/main.50b7dc86.css",
+    "main.js": "/free-code-camp-quote-machine/static/js/main.aa6a2b81.js",
     "index.html": "/free-code-camp-quote-machine/index.html",
-    "main.1c5f3e49.css.map": "/free-code-camp-quote-machine/static/css/main.1c5f3e49.css.map",
-    "main.38ac2c40.js.map": "/free-code-camp-quote-machine/static/js/main.38ac2c40.js.map"
+    "main.50b7dc86.css.map": "/free-code-camp-quote-machine/static/css/main.50b7dc86.css.map",
+    "main.aa6a2b81.js.map": "/free-code-camp-quote-machine/static/js/main.aa6a2b81.js.map"
   },
   "entrypoints": [
-    "static/css/main.1c5f3e49.css",
-    "static/js/main.38ac2c40.js"
+    "static/css/main.50b7dc86.css",
+    "static/js/main.aa6a2b81.js"
   ]
 }
