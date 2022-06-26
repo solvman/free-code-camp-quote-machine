@@ -34,6 +34,12 @@ function App() {
         requestQuote={requestQuote}
         setRequestQuote={setRequestQuote}
       />
+      <p id="attribution">
+        Inspirational quotes provided by{" "}
+        <a href="https://zenquotes.io/" target="_blank" rel="noreferrer">
+          ZenQuotes API
+        </a>
+      </p>
     </main>
   );
 }
