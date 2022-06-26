@@ -13,7 +13,9 @@ function App() {
   useEffect(() => {
     const fetchQuote = async () => {
       try {
-        const response = await axios("https://zenquotes.io/api/random");
+        const response = await axios(
+          "https://solvman-node-api-proxy-server.herokuapp.com/api"
+        );
         setQuote(response.data[0]);
       } catch (err) {
         console.log(err.message);
