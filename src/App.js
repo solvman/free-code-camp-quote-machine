@@ -21,7 +21,6 @@ function App() {
     };
 
     fetchQuote();
-    console.log("useEffect fired");
   }, [requestQuote]);
 
   return (
